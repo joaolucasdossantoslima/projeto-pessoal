@@ -1,0 +1,70 @@
+header{
+    display: flex;
+    background-color: rgb(102, 102, 247);
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.Titulo{
+margin: 20px;
+font-weight: 40px;
+color: white;
+}
+nav{
+    margin-left: 60px;
+    margin-right: auto;
+    margin-top: 27px;
+    margin-bottom: 0;
+}
+.menu{
+    color: white;
+    text-decoration:none;
+    margin: 20px;
+    padding: 0px;
+    position: relative;
+    transition: ease-in-out 0.5s;
+    font-size: 23px;
+    padding-bottom: 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.menu::after{
+    content: "";
+    height: 4px;
+    width: 0;
+    background-color: white;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    border-radius: 10px;
+    transition: ease-in-out 0.5s;
+}
+.menu:hover::after{
+    width: 103%;
+    background-color:rgb(173, 206, 255);
+}
+.menu:hover{
+    color: rgb(173, 206, 255);
+    scale: 110%;
+}
+.Entrar{
+    background-color: white;
+    color: rgb(102, 102, 247);
+    font-size: 20px;
+    height: 40px;
+    width: 80px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-right: 50px;
+    border: solid 1px black;
+    transition: ease-in-out 0.5s;
+    cursor: pointer;
+}
+.Entrar:hover{
+    scale: 110%;
+}
+.Entrar:active{
+    scale: 80%;
+    transition: 0.3s;
+}
